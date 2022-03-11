@@ -39,13 +39,13 @@ const switchTab = (id) => {
         document.getElementById( "liked" ).style.display = "block";
         document.getElementById( "posts" ).style.display = "none";
         document.getElementById( "reported" ).style.display = "none";
-       // document.getElementById( "liked" ).innerHTML=""
+        document.getElementById( "liked" ).innerHTML="<h1>Liked posts</h1>"
         displayLikedPosts();
     } else {
         document.getElementById( "reported" ).style.display = "block";
         document.getElementById( "posts" ).style.display = "none";
         document.getElementById( "liked" ).style.display = "none";
-       // document.getElementById( "reported" ).innerHTML="" 
+        document.getElementById( "reported" ).innerHTML="<h1>Reported posts</h1>" 
         displayReportedPosts();
     }
 };
